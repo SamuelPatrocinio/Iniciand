@@ -1,0 +1,40 @@
+/*
+  Neste código eu não usei o encapsulamento.
+ 
+*/
+package teste;
+public class lampada {
+	
+    boolean estado= false;
+    String marca = null ;
+    double valor=0;
+    int voltagen=0;
+
+    public  recebe(String nome , double preço ) {
+      this.marca=nome;
+      this.valor=preço;
+    }
+    public String acender(){
+      this.estado=true;
+      return "acesa";
+    }	
+    public String apagar(){
+      this.estado=false;
+      return "apagada";
+    }
+    public String estadoDaLanpada(){
+      String resultado="";
+      if(this.estado == true)
+      {
+        resultado="acesa";
+      }
+      else if(this.estado == false)
+      {
+        resultado = "apagada";
+      }
+      return resultado;
+
+    }
+	
+	
+}
